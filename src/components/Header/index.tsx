@@ -9,6 +9,7 @@ type Props = {
 	onRestart: () => void;
 };
 
+
 export function Header({ current, max, onRestart }: Props) {
 	return (
 		<div className={styles.container}>
@@ -20,7 +21,7 @@ export function Header({ current, max, onRestart }: Props) {
 				</span>
 
 				<button type="button" onClick={onRestart}>
-					<img src={restart} alt="" />
+					<img src={restart} alt="Recomeçar o jogo" />
 				</button>
 			</header>
 		</div>
